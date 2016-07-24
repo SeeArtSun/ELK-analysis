@@ -1,0 +1,100 @@
+[2016-03-20 11:57:21,358][INFO ][node                     ] [Herr Kleiser] version[2.2.0], pid[494], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-20 11:57:21,360][INFO ][node                     ] [Herr Kleiser] initializing ...
+[2016-03-20 11:57:23,028][INFO ][plugins                  ] [Herr Kleiser] modules [lang-expression, lang-groovy], plugins [head], sites [head]
+[2016-03-20 11:57:23,147][INFO ][env                      ] [Herr Kleiser] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [203.6gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-20 11:57:23,147][INFO ][env                      ] [Herr Kleiser] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-03-20 11:57:29,183][INFO ][node                     ] [Herr Kleiser] initialized
+[2016-03-20 11:57:29,183][INFO ][node                     ] [Herr Kleiser] starting ...
+[2016-03-20 11:57:29,415][INFO ][transport                ] [Herr Kleiser] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-20 11:57:29,427][INFO ][discovery                ] [Herr Kleiser] elasticsearch/ULgJu-3QToWwUu4vmdpaiQ
+[2016-03-20 11:57:32,468][INFO ][cluster.service          ] [Herr Kleiser] new_master {Herr Kleiser}{ULgJu-3QToWwUu4vmdpaiQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-20 11:57:32,489][INFO ][http                     ] [Herr Kleiser] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-20 11:57:32,489][INFO ][node                     ] [Herr Kleiser] started
+[2016-03-20 11:57:32,548][INFO ][gateway                  ] [Herr Kleiser] recovered [0] indices into cluster_state
+[2016-03-20 11:58:15,338][INFO ][node                     ] [Herr Kleiser] stopping ...
+[2016-03-20 11:58:15,357][INFO ][node                     ] [Herr Kleiser] stopped
+[2016-03-20 11:58:15,357][INFO ][node                     ] [Herr Kleiser] closing ...
+[2016-03-20 11:58:15,363][INFO ][node                     ] [Herr Kleiser] closed
+[2016-03-20 11:59:25,832][INFO ][node                     ] [Ox] version[2.2.0], pid[524], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-20 11:59:25,832][INFO ][node                     ] [Ox] initializing ...
+[2016-03-20 11:59:26,241][INFO ][plugins                  ] [Ox] modules [lang-expression, lang-groovy], plugins [head], sites [head]
+[2016-03-20 11:59:26,258][INFO ][env                      ] [Ox] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [203.6gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-20 11:59:26,258][INFO ][env                      ] [Ox] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-03-20 11:59:27,675][INFO ][node                     ] [Ox] initialized
+[2016-03-20 11:59:27,676][INFO ][node                     ] [Ox] starting ...
+[2016-03-20 11:59:27,739][INFO ][transport                ] [Ox] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-20 11:59:27,746][INFO ][discovery                ] [Ox] elasticsearch/lgdqJiz_RJi7VmyGnrPd3A
+[2016-03-20 11:59:30,788][INFO ][cluster.service          ] [Ox] new_master {Ox}{lgdqJiz_RJi7VmyGnrPd3A}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-20 11:59:30,798][INFO ][http                     ] [Ox] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-20 11:59:30,798][INFO ][node                     ] [Ox] started
+[2016-03-20 11:59:30,815][INFO ][gateway                  ] [Ox] recovered [0] indices into cluster_state
+[2016-03-20 12:00:18,914][INFO ][node                     ] [Ox] stopping ...
+[2016-03-20 12:00:18,923][INFO ][node                     ] [Ox] stopped
+[2016-03-20 12:00:18,923][INFO ][node                     ] [Ox] closing ...
+[2016-03-20 12:00:18,928][INFO ][node                     ] [Ox] closed
+[2016-03-20 12:05:35,576][INFO ][node                     ] [Namorita] version[2.2.0], pid[567], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-20 12:05:35,577][INFO ][node                     ] [Namorita] initializing ...
+[2016-03-20 12:05:35,989][INFO ][plugins                  ] [Namorita] modules [lang-expression, lang-groovy], plugins [head], sites [head]
+[2016-03-20 12:05:36,004][INFO ][env                      ] [Namorita] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [203.6gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-20 12:05:36,006][INFO ][env                      ] [Namorita] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-03-20 12:05:37,418][INFO ][node                     ] [Namorita] initialized
+[2016-03-20 12:05:37,418][INFO ][node                     ] [Namorita] starting ...
+[2016-03-20 12:05:37,509][INFO ][transport                ] [Namorita] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-20 12:05:37,515][INFO ][discovery                ] [Namorita] elasticsearch/8LlPkftGRNK6MWElgPwoaw
+[2016-03-20 12:05:40,552][INFO ][cluster.service          ] [Namorita] new_master {Namorita}{8LlPkftGRNK6MWElgPwoaw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-20 12:05:40,564][INFO ][http                     ] [Namorita] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-20 12:05:40,564][INFO ][node                     ] [Namorita] started
+[2016-03-20 12:05:40,582][INFO ][gateway                  ] [Namorita] recovered [0] indices into cluster_state
+[2016-03-20 12:34:30,261][INFO ][rest.suppressed          ] /_pluginhead/ Params: {index=_pluginhead}
+java.lang.IllegalArgumentException: No feature for name [_pluginhead]
+	at org.elasticsearch.action.admin.indices.get.GetIndexRequest$Feature.fromName(GetIndexRequest.java:82)
+	at org.elasticsearch.action.admin.indices.get.GetIndexRequest$Feature.convertToFeatures(GetIndexRequest.java:95)
+	at org.elasticsearch.rest.action.admin.indices.get.RestGetIndicesAction.handleRequest(RestGetIndicesAction.java:77)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:54)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:207)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:166)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:128)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:86)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:363)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:75)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-20 12:51:26,779][INFO ][node                     ] [Namorita] stopping ...
+[2016-03-20 12:51:26,793][INFO ][node                     ] [Namorita] stopped
+[2016-03-20 12:51:26,793][INFO ][node                     ] [Namorita] closing ...
+[2016-03-20 12:51:26,796][INFO ][node                     ] [Namorita] closed

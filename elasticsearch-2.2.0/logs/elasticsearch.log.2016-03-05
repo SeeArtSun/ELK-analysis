@@ -1,0 +1,201 @@
+[2016-03-05 13:23:27,013][INFO ][node                     ] [Zuras] version[2.2.0], pid[859], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-05 13:23:27,013][INFO ][node                     ] [Zuras] initializing ...
+[2016-03-05 13:23:28,652][INFO ][plugins                  ] [Zuras] modules [lang-expression, lang-groovy], plugins [], sites []
+[2016-03-05 13:23:28,772][INFO ][env                      ] [Zuras] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [204.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-05 13:23:28,772][INFO ][env                      ] [Zuras] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-03-05 13:23:35,101][INFO ][node                     ] [Zuras] initialized
+[2016-03-05 13:23:35,101][INFO ][node                     ] [Zuras] starting ...
+[2016-03-05 13:23:35,389][INFO ][transport                ] [Zuras] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-05 13:23:35,428][INFO ][discovery                ] [Zuras] elasticsearch/ZBZTOyo7TYWFTMFFh5ccIg
+[2016-03-05 13:23:38,484][INFO ][cluster.service          ] [Zuras] new_master {Zuras}{ZBZTOyo7TYWFTMFFh5ccIg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-05 13:23:38,507][INFO ][http                     ] [Zuras] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-05 13:23:38,507][INFO ][node                     ] [Zuras] started
+[2016-03-05 13:23:38,578][INFO ][gateway                  ] [Zuras] recovered [0] indices into cluster_state
+[2016-03-05 13:24:15,716][INFO ][node                     ] [Cable] version[2.2.0], pid[879], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-05 13:24:15,717][INFO ][node                     ] [Cable] initializing ...
+[2016-03-05 13:24:16,123][INFO ][plugins                  ] [Cable] modules [lang-expression, lang-groovy], plugins [], sites []
+[2016-03-05 13:24:16,142][INFO ][env                      ] [Cable] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [204.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-05 13:24:16,142][INFO ][env                      ] [Cable] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-03-05 13:24:17,738][INFO ][node                     ] [Cable] initialized
+[2016-03-05 13:24:17,738][INFO ][node                     ] [Cable] starting ...
+[2016-03-05 13:24:17,828][INFO ][transport                ] [Cable] publish_address {127.0.0.1:9301}, bound_addresses {[fe80::1]:9301}, {[::1]:9301}, {127.0.0.1:9301}
+[2016-03-05 13:24:17,835][INFO ][discovery                ] [Cable] elasticsearch/0e9UXEJ8Sf6D3oED2emNHA
+[2016-03-05 13:24:20,134][INFO ][node                     ] [Zuras] stopping ...
+[2016-03-05 13:24:20,181][INFO ][node                     ] [Zuras] stopped
+[2016-03-05 13:24:20,181][INFO ][node                     ] [Zuras] closing ...
+[2016-03-05 13:24:20,192][INFO ][node                     ] [Zuras] closed
+[2016-03-05 13:24:20,883][WARN ][discovery.zen            ] [Cable] failed to connect to master [{Zuras}{ZBZTOyo7TYWFTMFFh5ccIg}{127.0.0.1}{127.0.0.1:9300}], retrying...
+ConnectTransportException[[Zuras][127.0.0.1:9300] connect_timeout[30s]]; nested: ConnectException[Connection refused: /127.0.0.1:9300];
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:970)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:903)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:876)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:243)
+	at org.elasticsearch.discovery.zen.ZenDiscovery.joinElectedMaster(ZenDiscovery.java:419)
+	at org.elasticsearch.discovery.zen.ZenDiscovery.innerJoinCluster(ZenDiscovery.java:371)
+	at org.elasticsearch.discovery.zen.ZenDiscovery.access$5000(ZenDiscovery.java:75)
+	at org.elasticsearch.discovery.zen.ZenDiscovery$JoinThreadControl$1.run(ZenDiscovery.java:1260)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: /127.0.0.1:9300
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2016-03-05 13:24:23,927][INFO ][cluster.service          ] [Cable] new_master {Cable}{0e9UXEJ8Sf6D3oED2emNHA}{127.0.0.1}{127.0.0.1:9301}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-05 13:24:23,937][INFO ][http                     ] [Cable] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-05 13:24:23,937][INFO ][node                     ] [Cable] started
+[2016-03-05 13:24:23,959][INFO ][gateway                  ] [Cable] recovered [0] indices into cluster_state
+[2016-03-05 13:24:44,271][INFO ][node                     ] [Cable] stopping ...
+[2016-03-05 13:24:44,293][INFO ][node                     ] [Cable] stopped
+[2016-03-05 13:24:44,294][INFO ][node                     ] [Cable] closing ...
+[2016-03-05 13:24:44,301][INFO ][node                     ] [Cable] closed
+[2016-03-05 13:24:48,397][INFO ][node                     ] [Mahkizmo] version[2.2.0], pid[910], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-05 13:24:48,397][INFO ][node                     ] [Mahkizmo] initializing ...
+[2016-03-05 13:24:48,772][INFO ][plugins                  ] [Mahkizmo] modules [lang-expression, lang-groovy], plugins [], sites []
+[2016-03-05 13:24:48,788][INFO ][env                      ] [Mahkizmo] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [204.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-05 13:24:48,788][INFO ][env                      ] [Mahkizmo] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-03-05 13:24:50,321][INFO ][node                     ] [Mahkizmo] initialized
+[2016-03-05 13:24:50,322][INFO ][node                     ] [Mahkizmo] starting ...
+[2016-03-05 13:24:50,404][INFO ][transport                ] [Mahkizmo] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-05 13:24:50,411][INFO ][discovery                ] [Mahkizmo] elasticsearch/CugNmA5mRfiVBTa2EGAykA
+[2016-03-05 13:24:53,455][INFO ][cluster.service          ] [Mahkizmo] new_master {Mahkizmo}{CugNmA5mRfiVBTa2EGAykA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-05 13:24:53,467][INFO ][http                     ] [Mahkizmo] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-05 13:24:53,468][INFO ][node                     ] [Mahkizmo] started
+[2016-03-05 13:24:53,484][INFO ][gateway                  ] [Mahkizmo] recovered [0] indices into cluster_state
+[2016-03-05 13:56:00,489][INFO ][node                     ] [Mahkizmo] stopping ...
+[2016-03-05 13:56:00,505][INFO ][node                     ] [Mahkizmo] stopped
+[2016-03-05 13:56:00,505][INFO ][node                     ] [Mahkizmo] closing ...
+[2016-03-05 13:56:00,511][INFO ][node                     ] [Mahkizmo] closed
+[2016-03-05 13:57:36,647][INFO ][node                     ] [Magilla] version[2.2.0], pid[1034], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-05 13:57:36,648][INFO ][node                     ] [Magilla] initializing ...
+[2016-03-05 13:57:37,032][INFO ][plugins                  ] [Magilla] modules [lang-expression, lang-groovy], plugins [], sites []
+[2016-03-05 13:57:37,048][INFO ][env                      ] [Magilla] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [204.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-05 13:57:37,048][INFO ][env                      ] [Magilla] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-03-05 13:57:38,587][INFO ][node                     ] [Magilla] initialized
+[2016-03-05 13:57:38,587][INFO ][node                     ] [Magilla] starting ...
+[2016-03-05 13:57:38,681][INFO ][transport                ] [Magilla] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-05 13:57:38,688][INFO ][discovery                ] [Magilla] elasticsearch/xsNE9amsTZCk0FSU_VdDsw
+[2016-03-05 13:57:41,730][INFO ][cluster.service          ] [Magilla] new_master {Magilla}{xsNE9amsTZCk0FSU_VdDsw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-05 13:57:41,745][INFO ][http                     ] [Magilla] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-05 13:57:41,746][INFO ][node                     ] [Magilla] started
+[2016-03-05 13:57:41,761][INFO ][gateway                  ] [Magilla] recovered [0] indices into cluster_state
+[2016-03-05 14:03:28,911][INFO ][node                     ] [Magilla] stopping ...
+[2016-03-05 14:03:28,925][INFO ][node                     ] [Magilla] stopped
+[2016-03-05 14:03:28,925][INFO ][node                     ] [Magilla] closing ...
+[2016-03-05 14:03:28,929][INFO ][node                     ] [Magilla] closed
+[2016-03-05 14:07:33,981][INFO ][node                     ] [Helmut Zemo] version[2.2.0], pid[1098], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-05 14:07:33,981][INFO ][node                     ] [Helmut Zemo] initializing ...
+[2016-03-05 14:07:34,372][INFO ][plugins                  ] [Helmut Zemo] modules [lang-expression, lang-groovy], plugins [], sites []
+[2016-03-05 14:07:34,389][INFO ][env                      ] [Helmut Zemo] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [204.6gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-05 14:07:34,389][INFO ][env                      ] [Helmut Zemo] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-03-05 14:07:36,037][INFO ][node                     ] [Helmut Zemo] initialized
+[2016-03-05 14:07:36,037][INFO ][node                     ] [Helmut Zemo] starting ...
+[2016-03-05 14:07:36,119][INFO ][transport                ] [Helmut Zemo] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-05 14:07:36,126][INFO ][discovery                ] [Helmut Zemo] elasticsearch/V87W3OFIROKr2cG3KgS3JA
+[2016-03-05 14:07:39,172][INFO ][cluster.service          ] [Helmut Zemo] new_master {Helmut Zemo}{V87W3OFIROKr2cG3KgS3JA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-05 14:07:39,187][INFO ][http                     ] [Helmut Zemo] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-05 14:07:39,187][INFO ][node                     ] [Helmut Zemo] started
+[2016-03-05 14:07:39,202][INFO ][gateway                  ] [Helmut Zemo] recovered [0] indices into cluster_state
+[2016-03-05 14:08:07,360][INFO ][node                     ] [Diamondback] version[2.2.0], pid[1104], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-05 14:08:07,360][INFO ][node                     ] [Diamondback] initializing ...
+[2016-03-05 14:08:07,752][INFO ][plugins                  ] [Diamondback] modules [lang-expression, lang-groovy], plugins [], sites []
+[2016-03-05 14:08:07,768][INFO ][env                      ] [Diamondback] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [204.6gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-05 14:08:07,770][INFO ][env                      ] [Diamondback] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-03-05 14:08:09,306][INFO ][node                     ] [Diamondback] initialized
+[2016-03-05 14:08:09,307][INFO ][node                     ] [Diamondback] starting ...
+[2016-03-05 14:08:09,402][INFO ][transport                ] [Diamondback] publish_address {127.0.0.1:9301}, bound_addresses {[fe80::1]:9301}, {[::1]:9301}, {127.0.0.1:9301}
+[2016-03-05 14:08:09,411][INFO ][discovery                ] [Diamondback] elasticsearch/ogf-USRHRhmH_ufgXnTE5A
+[2016-03-05 14:08:12,469][INFO ][cluster.service          ] [Helmut Zemo] added {{Diamondback}{ogf-USRHRhmH_ufgXnTE5A}{127.0.0.1}{127.0.0.1:9301},}, reason: zen-disco-join(join from node[{Diamondback}{ogf-USRHRhmH_ufgXnTE5A}{127.0.0.1}{127.0.0.1:9301}])
+[2016-03-05 14:08:12,530][INFO ][cluster.service          ] [Diamondback] detected_master {Helmut Zemo}{V87W3OFIROKr2cG3KgS3JA}{127.0.0.1}{127.0.0.1:9300}, added {{Helmut Zemo}{V87W3OFIROKr2cG3KgS3JA}{127.0.0.1}{127.0.0.1:9300},}, reason: zen-disco-receive(from master [{Helmut Zemo}{V87W3OFIROKr2cG3KgS3JA}{127.0.0.1}{127.0.0.1:9300}])
+[2016-03-05 14:08:12,564][INFO ][http                     ] [Diamondback] publish_address {127.0.0.1:9201}, bound_addresses {[fe80::1]:9201}, {[::1]:9201}, {127.0.0.1:9201}
+[2016-03-05 14:08:12,564][INFO ][node                     ] [Diamondback] started
+[2016-03-05 14:08:47,055][INFO ][node                     ] [Jamie Braddock] version[2.2.0], pid[1137], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-05 14:08:47,055][INFO ][node                     ] [Jamie Braddock] initializing ...
+[2016-03-05 14:08:47,441][INFO ][plugins                  ] [Jamie Braddock] modules [lang-expression, lang-groovy], plugins [], sites []
+[2016-03-05 14:08:47,457][INFO ][env                      ] [Jamie Braddock] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [204.6gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-05 14:08:47,458][INFO ][env                      ] [Jamie Braddock] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-03-05 14:08:48,853][INFO ][node                     ] [Jamie Braddock] initialized
+[2016-03-05 14:08:48,854][INFO ][node                     ] [Jamie Braddock] starting ...
+[2016-03-05 14:08:48,960][INFO ][transport                ] [Jamie Braddock] publish_address {127.0.0.1:9302}, bound_addresses {[fe80::1]:9302}, {[::1]:9302}, {127.0.0.1:9302}
+[2016-03-05 14:08:48,967][INFO ][discovery                ] [Jamie Braddock] elasticsearch/mqTDvLAiRJqFZt_slAyITA
+[2016-03-05 14:08:52,026][INFO ][cluster.service          ] [Helmut Zemo] added {{Jamie Braddock}{mqTDvLAiRJqFZt_slAyITA}{127.0.0.1}{127.0.0.1:9302},}, reason: zen-disco-join(join from node[{Jamie Braddock}{mqTDvLAiRJqFZt_slAyITA}{127.0.0.1}{127.0.0.1:9302}])
+[2016-03-05 14:08:52,040][INFO ][cluster.service          ] [Jamie Braddock] detected_master {Helmut Zemo}{V87W3OFIROKr2cG3KgS3JA}{127.0.0.1}{127.0.0.1:9300}, added {{Helmut Zemo}{V87W3OFIROKr2cG3KgS3JA}{127.0.0.1}{127.0.0.1:9300},{Diamondback}{ogf-USRHRhmH_ufgXnTE5A}{127.0.0.1}{127.0.0.1:9301},}, reason: zen-disco-receive(from master [{Helmut Zemo}{V87W3OFIROKr2cG3KgS3JA}{127.0.0.1}{127.0.0.1:9300}])
+[2016-03-05 14:08:52,054][INFO ][cluster.service          ] [Diamondback] added {{Jamie Braddock}{mqTDvLAiRJqFZt_slAyITA}{127.0.0.1}{127.0.0.1:9302},}, reason: zen-disco-receive(from master [{Helmut Zemo}{V87W3OFIROKr2cG3KgS3JA}{127.0.0.1}{127.0.0.1:9300}])
+[2016-03-05 14:08:52,083][INFO ][http                     ] [Jamie Braddock] publish_address {127.0.0.1:9202}, bound_addresses {[fe80::1]:9202}, {[::1]:9202}, {127.0.0.1:9202}
+[2016-03-05 14:08:52,083][INFO ][node                     ] [Jamie Braddock] started
+[2016-03-05 14:09:57,880][INFO ][node                     ] [Jamie Braddock] stopping ...
+[2016-03-05 14:09:57,891][INFO ][cluster.service          ] [Helmut Zemo] removed {{Jamie Braddock}{mqTDvLAiRJqFZt_slAyITA}{127.0.0.1}{127.0.0.1:9302},}, reason: zen-disco-node_left({Jamie Braddock}{mqTDvLAiRJqFZt_slAyITA}{127.0.0.1}{127.0.0.1:9302})
+[2016-03-05 14:09:57,893][INFO ][cluster.service          ] [Diamondback] removed {{Jamie Braddock}{mqTDvLAiRJqFZt_slAyITA}{127.0.0.1}{127.0.0.1:9302},}, reason: zen-disco-receive(from master [{Helmut Zemo}{V87W3OFIROKr2cG3KgS3JA}{127.0.0.1}{127.0.0.1:9300}])
+[2016-03-05 14:09:57,905][INFO ][node                     ] [Jamie Braddock] stopped
+[2016-03-05 14:09:57,905][INFO ][node                     ] [Jamie Braddock] closing ...
+[2016-03-05 14:09:57,909][INFO ][node                     ] [Jamie Braddock] closed
+[2016-03-05 14:10:02,822][INFO ][node                     ] [Helmut Zemo] stopping ...
+[2016-03-05 14:10:02,830][INFO ][discovery.zen            ] [Diamondback] master_left [{Helmut Zemo}{V87W3OFIROKr2cG3KgS3JA}{127.0.0.1}{127.0.0.1:9300}], reason [shut_down]
+[2016-03-05 14:10:02,831][WARN ][discovery.zen            ] [Diamondback] master left (reason = shut_down), current nodes: {{Diamondback}{ogf-USRHRhmH_ufgXnTE5A}{127.0.0.1}{127.0.0.1:9301},}
+[2016-03-05 14:10:02,835][INFO ][cluster.service          ] [Diamondback] removed {{Helmut Zemo}{V87W3OFIROKr2cG3KgS3JA}{127.0.0.1}{127.0.0.1:9300},}, reason: zen-disco-master_failed ({Helmut Zemo}{V87W3OFIROKr2cG3KgS3JA}{127.0.0.1}{127.0.0.1:9300})
+[2016-03-05 14:10:02,838][INFO ][node                     ] [Helmut Zemo] stopped
+[2016-03-05 14:10:02,839][INFO ][node                     ] [Helmut Zemo] closing ...
+[2016-03-05 14:10:02,845][INFO ][node                     ] [Helmut Zemo] closed
+[2016-03-05 14:10:05,862][INFO ][cluster.service          ] [Diamondback] new_master {Diamondback}{ogf-USRHRhmH_ufgXnTE5A}{127.0.0.1}{127.0.0.1:9301}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-05 14:10:28,893][INFO ][node                     ] [Diamondback] stopping ...
+[2016-03-05 14:10:28,905][INFO ][node                     ] [Diamondback] stopped
+[2016-03-05 14:10:28,906][INFO ][node                     ] [Diamondback] closing ...
+[2016-03-05 14:10:28,910][INFO ][node                     ] [Diamondback] closed
+[2016-03-05 14:10:49,299][INFO ][node                     ] [Sludge] version[2.2.0], pid[1161], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-05 14:10:49,299][INFO ][node                     ] [Sludge] initializing ...
+[2016-03-05 14:10:49,669][INFO ][plugins                  ] [Sludge] modules [lang-expression, lang-groovy], plugins [], sites []
+[2016-03-05 14:10:49,684][INFO ][env                      ] [Sludge] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [204.6gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-05 14:10:49,685][INFO ][env                      ] [Sludge] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-03-05 14:10:51,178][INFO ][node                     ] [Sludge] initialized
+[2016-03-05 14:10:51,178][INFO ][node                     ] [Sludge] starting ...
+[2016-03-05 14:10:51,262][INFO ][transport                ] [Sludge] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-05 14:10:51,268][INFO ][discovery                ] [Sludge] elasticsearch/AyTs_l7WSOalmDIj2_-1gA
+[2016-03-05 14:10:54,312][INFO ][cluster.service          ] [Sludge] new_master {Sludge}{AyTs_l7WSOalmDIj2_-1gA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-05 14:10:54,326][INFO ][http                     ] [Sludge] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-05 14:10:54,326][INFO ][node                     ] [Sludge] started
+[2016-03-05 14:10:54,342][INFO ][gateway                  ] [Sludge] recovered [0] indices into cluster_state
+[2016-03-05 14:11:53,557][INFO ][node                     ] [Sludge] stopping ...
+[2016-03-05 14:11:53,571][INFO ][node                     ] [Sludge] stopped
+[2016-03-05 14:11:53,571][INFO ][node                     ] [Sludge] closing ...
+[2016-03-05 14:11:53,576][INFO ][node                     ] [Sludge] closed
+[2016-03-05 14:14:11,254][INFO ][node                     ] [Angel Face] version[2.2.0], pid[1186], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-05 14:14:11,255][INFO ][node                     ] [Angel Face] initializing ...
+[2016-03-05 14:14:11,649][INFO ][plugins                  ] [Angel Face] modules [lang-expression, lang-groovy], plugins [], sites []
+[2016-03-05 14:14:11,666][INFO ][env                      ] [Angel Face] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [204.6gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-05 14:14:11,666][INFO ][env                      ] [Angel Face] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-03-05 14:14:13,220][INFO ][node                     ] [Angel Face] initialized
+[2016-03-05 14:14:13,220][INFO ][node                     ] [Angel Face] starting ...
+[2016-03-05 14:14:13,310][INFO ][transport                ] [Angel Face] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-05 14:14:13,319][INFO ][discovery                ] [Angel Face] elasticsearch/vyI0XgtFQOmoInDrmAkczg
+[2016-03-05 14:14:16,359][INFO ][cluster.service          ] [Angel Face] new_master {Angel Face}{vyI0XgtFQOmoInDrmAkczg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-05 14:14:16,372][INFO ][http                     ] [Angel Face] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-05 14:14:16,373][INFO ][node                     ] [Angel Face] started
+[2016-03-05 14:14:16,387][INFO ][gateway                  ] [Angel Face] recovered [0] indices into cluster_state
+[2016-03-05 14:14:43,169][INFO ][node                     ] [Angel Face] stopping ...
+[2016-03-05 14:14:43,179][INFO ][node                     ] [Angel Face] stopped
+[2016-03-05 14:14:43,179][INFO ][node                     ] [Angel Face] closing ...
+[2016-03-05 14:14:43,187][INFO ][node                     ] [Angel Face] closed
+[2016-03-05 14:14:55,515][INFO ][node                     ] [Black Death] version[2.2.0], pid[1209], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-03-05 14:14:55,516][INFO ][node                     ] [Black Death] initializing ...
+[2016-03-05 14:14:55,881][INFO ][plugins                  ] [Black Death] modules [lang-expression, lang-groovy], plugins [], sites []
+[2016-03-05 14:14:55,896][INFO ][env                      ] [Black Death] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [204.6gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-05 14:14:55,896][INFO ][env                      ] [Black Death] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-03-05 14:14:57,384][INFO ][node                     ] [Black Death] initialized
+[2016-03-05 14:14:57,384][INFO ][node                     ] [Black Death] starting ...
+[2016-03-05 14:14:57,490][INFO ][transport                ] [Black Death] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-05 14:14:57,497][INFO ][discovery                ] [Black Death] elasticsearch/53LU1p1dQruoaRRP2bZQsg
+[2016-03-05 14:15:00,540][INFO ][cluster.service          ] [Black Death] new_master {Black Death}{53LU1p1dQruoaRRP2bZQsg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-05 14:15:00,551][INFO ][http                     ] [Black Death] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-05 14:15:00,551][INFO ][node                     ] [Black Death] started
+[2016-03-05 14:15:00,570][INFO ][gateway                  ] [Black Death] recovered [0] indices into cluster_state
+[2016-03-05 14:15:10,464][INFO ][node                     ] [Black Death] stopping ...
+[2016-03-05 14:15:10,474][INFO ][node                     ] [Black Death] stopped
+[2016-03-05 14:15:10,474][INFO ][node                     ] [Black Death] closing ...
+[2016-03-05 14:15:10,479][INFO ][node                     ] [Black Death] closed
