@@ -41,11 +41,13 @@ $ kibana-4.4.1-darwin-x64/bin/kibana
 ### 1.3 포트정보
 
 - ElasticSearch Port is set to [9200]
+
 > ex) http://localhost:9200/_plugin/head - ElasticSearch Cluster Monitor
 
 ![ElasticSearch](https://github.com/SeeArtSun/ELK-analysis/blob/master/img/elk-cluster.png?raw=true)
 
 - Kibana Server Port is set to [5601]
+
 > ex) http://localhost:5601/
 
 ### 1.4 Kibana Dashboard 확인
