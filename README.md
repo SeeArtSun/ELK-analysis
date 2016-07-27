@@ -49,7 +49,7 @@ $ kibana-4.4.1-darwin-x64/bin/kibana
 > ex) http://localhost:5601/
 
 ### 1.4 Kibana Dashboard 확인
-> 시간설정 2014년(2014/01/01 ~ 2014/12/31)으로 변경 후 Visualize Or Dashboard 메뉴 활용
+- 시간설정 2014년(2014/01/01 ~ 2014/12/31)으로 변경 후 Visualize Or Dashboard 메뉴 활용
 
 ## 2. 디렉토리 구조
 
