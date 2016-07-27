@@ -54,11 +54,17 @@ $ kibana-4.4.1-darwin-x64/bin/kibana
 ## 2. 디렉토리 구조
 
 > convert2log - 공공데이터 convert
+
 >>> data - 변환 데이터(*.log)
+
 >>> source - 원천 데이터
+
 >> convert_1to4.js, convert_5to8.js - 데이터 변환 프로그램
+
 > elasticsearch-2.2.0 - ElasticSearch
+
 > logstash-2.2.2 - Logstash
+
 > kibana-4.4.1-darwin-x64
 
 
