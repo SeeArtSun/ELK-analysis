@@ -1,10 +1,12 @@
 # ELK(ElasticSearch)Stack + 서울시 공공데이터 활용
+
 ![대시보드](https://github.com/SeeArtSun/ELK-analysis/blob/master/img/elk-seoul-subway.png?raw=true)
 
-> ### ELK = ElasticSearch + Logstash + Kibana
+### ELK = ElasticSearch + Logstash + Kibana
 > - ElasticSearch : Apach Lucene 기반의 실시간 분산 검색 엔진
 > - Logstash : 로그를 JSON 형태로 만들어 ElasticSearch로 전달
 > - Kibana : ElasticSearch에 저장된 Data를 Dashboard 형태로 보여주는 Solution
+
 
 ## Projact Download & Setup the Environment
 
@@ -13,6 +15,7 @@ $ git clone https://github.com/SeeArtSun/ELK-analysis.git
 $ npm install
 ```
 Java 1.8.0_37, Elasticsearch 2.2.0, Logstash 2.2.2 and Kabana 4.4.1 are used to setup the environment.
+
 
 ## 1. 실행방법
 ### 1.1 공공데이터 변환
@@ -39,16 +42,17 @@ $ kibana-4.4.1-darwin-x64/bin/kibana
 
 - ElasticSearch Port is set to [9200]
 > ex) http://localhost:9200/_plugin/head - ElasticSearch Cluster Monitor
+
 ![ElasticSearch](https://github.com/SeeArtSun/ELK-analysis/blob/master/img/elk-cluster.png?raw=true)
 
 - Kibana Server Port is set to [5601]
 > ex) http://localhost:5601/
 
 ### 1.4 Kibana Dashboard 확인
-> 시간설정 2014년(2014/01/01 ~ 2014/12/31)으로 변경 후 Visualize Or Dashboard
+> 시간설정 2014년(2014/01/01 ~ 2014/12/31)으로 변경 후 Visualize Or Dashboard 메뉴 활용
 
 ## 2. 디렉토리 구조
-```
+
 > convert2log 						- 공공데이터 convert
 >>> data 							- 변환 데이터(*.log)
 >>> source 							- 원천 데이터
@@ -56,5 +60,5 @@ $ kibana-4.4.1-darwin-x64/bin/kibana
 > elasticsearch-2.2.0 				- ElasticSearch
 > logstash-2.2.2 					- Logstash
 > kibana-4.4.1-darwin-x64  			- Kibana
-```
+
 
